@@ -1,6 +1,8 @@
 import { alpha, createTheme } from '@mui/material/styles'
 import { brand, radii } from './tokens'
-
+// Theme and styling choices were designed to give Aster HSA a clean,
+// modern financial dashboard feel, prioritizing readability, consistency,
+// and intuitive navigation through colors, spacing, and typography.
 const fontFamily =
   '"Manrope Variable", Manrope, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
 

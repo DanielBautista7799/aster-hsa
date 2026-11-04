@@ -1,7 +1,7 @@
 # Aster HSA: one command to run everything locally.
 #   docker compose up --build
 # Web app: http://localhost:3000   API docs: http://localhost:8000/api/docs
-#
+# In the event of live deployment easiest course of action is to adjust compose.yaml
 # Values below can be overridden with a .env file (see .env.example).
 
 services:
