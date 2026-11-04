@@ -26,18 +26,18 @@ It also handles **concurrent purchases** correctly. With a $100 balance, simulta
 Requirements: Docker Desktop (or Docker Engine with the Compose plugin).
 
 ```bash
-git clone https://github.com/DanielBautista7799/hsa-account-simulator.git
+git clone https://github.com/DanielBautista7799/aster-hsa.git
 ```
 
 ```bash
-cd hsa-account-simulator
+cd aster-hsa
 ```
 
 ```bash
 docker compose up --build
 ```
 
-When the three services report healthy, open:
+When the three services are running, open:
 
 | What | URL |
 |---|---|
@@ -263,7 +263,7 @@ docs/                    demo script, build notes, screenshots
 ## Troubleshooting
 
 - **Port already in use.** Copy `.env.example` to `.env` and change `WEB_PORT`, `API_PORT` or `DB_PORT`.
-- **The web app says it can't reach the API.** Check `docker compose ps`; all services should be `healthy`. View the logs with `docker compose logs backend`.
+- **The web app says it can't reach the API.** Check `docker compose ps`; all services should be `running`. View the logs with `docker compose logs backend`.
 - **Changed the Postgres user or password after the first run.** The volume keeps the original credentials. Reset with `docker compose down -v` (this deletes data).
 - **Tests say "Refusing to run tests".** `TEST_DATABASE_URL` must point at a database whose name ends in `_test`. This is intentional.
 - **The `aster_test` database is missing** (for example, the volume was created by an older version). Create it with:
