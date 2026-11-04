@@ -6,6 +6,7 @@
 | ----- | ----- | ----- | 
 | **ChatGPT (OpenAI)** | Iterating on the database schema, defining project milestones, and reworking the backend architecture to support simultaneous CRUD transactions. | I relied on it due to an extensive databank of conversation history, which allowed for a highly contextual, efficient, and less mechanical collaboration. | 
 | **Claude Code (Anthropic)** | Initializing the frontend architecture, building the core views, debugging, and polishing the React/MUI components. | Its strong context retention from previous sessions made iterative UI development, feature implementation, and debugging significantly faster. | 
+| **Gemini (Google)** | Helped organize my raw notes into a structured Markdown report and improve clarity, grammar, and formatting. | I used it to make the documentation easier to read while keeping the technical explanations and decisions my own. |
 
 ### How I approached AI collaboration
 
