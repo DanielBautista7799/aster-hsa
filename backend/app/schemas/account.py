@@ -8,8 +8,15 @@ from app.schemas.common import RequestModel, trimmed_text
 
 # Deliberately simple: something@something.tld, no spaces. Real systems would
 # confirm ownership by sending a verification email.
+
 EMAIL_PATTERN = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
+
+
+
+# Account deletion is intentionally unsupported to preserve financial records
+# and transaction history. ON DELETE RESTRICT enforces this at the database level.
+# A production system would close accounts instead of deleting them.
 
 class AccountCreate(RequestModel):
     full_name: trimmed_text(1, 120) = Field(description="Account holder's full name.")
