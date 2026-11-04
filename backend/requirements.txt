@@ -1,0 +1,14 @@
+# Runtime
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+SQLAlchemy==2.1.8
+psycopg[binary]==3.3.7
+alembic==1.20.1
+pydantic==2.14.2
+
+# Tests
+pytest==9.2.0
+httpx2==2.16.0  # HTTP client used by FastAPI's TestClient and the live-server test
+
+# Development
+ruff==0.17.3

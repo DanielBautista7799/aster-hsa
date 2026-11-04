@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Reference material that must never be committed
+*.pdf
+CLAUDE_MASTER_PROMPT.md
+PROJECT_BLUEPRINT.md
+START_HERE.md
+CLAUDE.md
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Playwright / QA screenshots
+test-results/
+playwright-report/

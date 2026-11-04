@@ -1,0 +1,17 @@
+# Lint and format settings for the backend. Run from backend/:
+#   ruff check .
+#   ruff format --check .
+line-length = 110
+target-version = "py312"
+
+[lint]
+# Defaults (pyflakes + pycodestyle errors) plus import sorting, pyupgrade and bugbear.
+select = ["E", "F", "I", "UP", "B"]
+
+[lint.per-file-ignores]
+# Migration files are generated and keep Alembic's layout.
+"alembic/versions/*" = ["E501"]
+
+[lint.flake8-bugbear]
+# FastAPI's documented style puts Depends()/Query() in parameter defaults.
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]
