@@ -17,7 +17,8 @@ It also handles **concurrent purchases** correctly. With a $100 balance, simulta
 | **Activity** | **Concurrency Lab** |
 | ![Transaction history](docs/screenshots/activity.png) | ![Concurrency Lab: $80 and $50 against $100](docs/screenshots/lab.png) |
 
-**Demo video:** https://www.youtube.com/watch?v=jj5bIWksaeY
+**Demo video:** https://www.youtube.com/watch?v=jj5bIWksaeY 
+NOTE: Sometimes video autoloads at low quality it can be changed in the video settings
 
 ---
 
